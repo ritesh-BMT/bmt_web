@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="currency_rupee">
+<mask id="mask0_0_7" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect id="Bounding box" width="24" height="24" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_0_7)">
+<path id="currency_rupee_2" d="M13.552 20L7.5 13.6923V12.3845H10.5C11.5115 12.3845 12.4311 12.065 13.2587 11.426C14.0862 10.7868 14.509 9.87558 14.527 8.69225H6.5V7.69225H14.4193C14.2128 6.90375 13.7503 6.25792 13.0318 5.75475C12.3131 5.25158 11.4692 5 10.5 5H6.5V4H17.5V5H13.5578C14.0346 5.28333 14.448 5.66542 14.798 6.14625C15.148 6.62692 15.3666 7.14225 15.4538 7.69225H17.5V8.69225H15.5328C15.5276 10.1089 15.0212 11.2452 14.0135 12.101C13.0058 12.9567 11.8347 13.3845 10.5 13.3845H8.602L14.9423 20H13.552Z" fill="#C89C66"/>
+</g>
+</g>
+</svg>

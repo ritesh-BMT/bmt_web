@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookMyTask — Any Task, Just Ask!</title>
+  <meta name="description" content="Leaking tap. Dusty sofa. Loose hinge. Dead socket. Tell us once, we'll send a trained, background-verified BMT Taskman at a time that works for you." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Dynamic appearance: shows up whenever the user scrolls up, no matter where they are on the page. -->
+  <header class="site-header">
+    <img src="assets/images/logo.svg" class="logo" alt="BookMyTask" />
+    <div class="spacer"></div>
+    <a class="round-icon" href="tel:180030005149" aria-label="Call">
+      <img src="assets/images/call.svg" alt="" />
+    </a>
+    <a class="round-icon" href="https://wa.me/180030005149" target="_blank" aria-label="WhatsApp">
+      <img src="assets/images/whatsapp.svg" alt="" />
+    </a>
+  </header>
+
+  <main>
+    <section class="hero-row">
+      <div class="hero-intro">
+        <div>
+          <span class="hero-badge">One less thing for you to deal with</span>
+          <h1 class="hero-title">That task you&rsquo;ve been putting off?<br /><strong>Let&rsquo;s get it done.</strong></h1>
+        </div>
+        <p class="hero-copy">Leaking tap. Dusty sofa. Loose hinge. Dead socket. Whatever is sitting on your list, tell us once, we&rsquo;ll send a trained, background-verified BMT Taskman at a time that works for you.</p>
+      </div>
+      <div class="promo-row" id="home-banner-carousel" aria-label="Featured services">
+        <p class="carousel-status" role="status">Loading offers…</p>
+      </div>
+    </section>
+
+    <div class="help-row">
+      <section class="help-section">
+        <div class="help-card">
+          <h2>What do you need help with?</h2>
+          <p class="sub">Pick a service. We&rsquo;ll get it done</p>
+          <span class="step-chip">Step 1 of 3</span>
+          <div class="cat-grid" id="cat-grid"></div>
+          <button class="view-more" id="view-more-btn" aria-controls="cat-grid" aria-expanded="false">
+            <span class="rule-row"><span class="rule"></span><span id="view-more-label">View more</span><span class="rule"></span></span>
+            <span id="view-more-arrow">&#9662;</span>
+          </button>
+          <p class="tail">Can&rsquo;t find your task? Tell us what needs doing and our support team will guide you.</p>
+          <button class="special-task-btn" data-open-special>&#128587; Request for a Special Task</button>
+        </div>
+      </section>
+
+      <div class="trusted-band">
+        <div class="trusted-inner">
+          <div class="trusted-watermark">
+            <img src="assets/svg/trusted_watermark.svg" alt="" />
+          </div>
+          <div class="trusted-photo">
+            <picture>
+              <source media="(min-width: 1100px)" srcset="assets/images/trusted_desktop.webp" />
+              <img src="assets/images/trusted.png" alt="" />
+            </picture>
+          </div>
+          <div class="trusted-text">Trusted by
+60,000+ People</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="shortcuts-section">
+      <h2 class="section-title">What can we take off your list?</h2>
+      <p class="section-sub">You don&rsquo;t need to know the technical name of the problem. Start with what you&rsquo;re seeing, we&rsquo;ll help you book the right service.</p>
+      <div class="shortcut-grid" id="shortcut-grid"></div>
+    </section>
+
+    <section class="assurance-section">
+      <h2 class="section-title assurance-title">BMT Assurance</h2>
+      <div class="assurance-box" id="assurance-box"></div>
+      <p class="assurance-terms">*Term and conditions apply</p>
+    </section>
+
+    <section class="deep-clean">
+      <div class="deep-clean-media">
+        <img src="assets/images/sofa_steam.png" class="hero-img" alt="" />
+      </div>
+      <div class="deep-clean-copy">
+        <h3>A surface wipe and a deep clean are <strong>not the same thing</strong></h3>
+        <ul class="point-list">
+          <li><img src="assets/svg/deep_point_1.svg" alt="" />India&rsquo;s most Comprehensive Deep Cleaning Service</li>
+          <li><img src="assets/svg/deep_point_2.svg" alt="" />Best in Class Technology &amp; Professional Equipments</li>
+          <li><img src="assets/svg/deep_point_3.svg" alt="" />Eco Friendly &amp; Green Seal Cleaning Agents</li>
+          <li><img src="assets/svg/deep_point_4.svg" alt="" />Professional Team Verified by Securitas</li>
+          <li><img src="assets/svg/deep_point_5.svg" alt="" />Internationally Benchmarked Cleaning Procedures</li>
+        </ul>
+        <button class="primary-btn" data-open-booking data-category="1">Book a HD Deep Cleaning &rsaquo;</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">#CommunityHub</h2>
+      <div class="hub-strip" id="hub-strip"></div>
+    </section>
+
+    <section class="journey">
+      <h3>No guessing what happens next</h3>
+      <p class="sub">A clear journey from arrival to closure.</p>
+      <div id="journey-list"></div>
+    </section>
+
+    <div class="app-mockup">
+      <img src="assets/images/store_bar_phone_mockup.png" alt="BookMyTask app" />
+    </div>
+
+    <div class="wrap">
+      <div class="store-bar">
+        <a class="store-chip" href="https://apps.apple.com/in/app/bmt-book-my-task/id6746551804" target="_blank">
+          <img src="assets/svg/apple_store_icon.svg" alt="" />
+          <div><div class="cap">Download on the</div><div class="ttl">App Store</div></div>
+        </a>
+        <a class="store-chip" href="https://play.google.com/store/apps/details?id=com.bookmytask.com&pcampaignid=web_share" target="_blank">
+          <img src="assets/svg/play_store_icon.svg" alt="" />
+          <div><div class="cap">Download on</div><div class="ttl">Google Play</div></div>
+        </a>
+      </div>
+    </div>
+
+    <section>
+      <div class="speak-expert">
+        <h3>Still thinking about that task?</h3>
+        <p>It will probably still be there tomorrow. Check a slot now and get it off your list.</p>
+        <a class="speak-expert-btn" href="https://wa.me/180030005149" target="_blank">
+          <img src="assets/images/whatsapp.svg" alt="" />
+          Speak to an Expert
+        </a>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="section-title" style="font-size:18px">Still got questions?</h2>
+      <p class="section-sub">Short answers to the questions that usually come up before someone enters your home.</p>
+      <div id="faq-list" style="margin-top:16px"></div>
+    </section>
+
+    <section>
+      <div class="pending-card">
+        <h3>Tell us what&rsquo;s pending. We&rsquo;ll help you get it off your list.</h3>
+        <p class="body">One booking. One assigned Taskman. A clearer way to get everyday home and office tasks done.</p>
+        <hr />
+        <p class="prefer">Prefer to speak to someone?</p>
+        <div class="circle-actions">
+          <a class="circle-action" href="https://wa.me/180030005149" target="_blank"><img src="assets/images/whatsapp.svg" alt="WhatsApp" /></a>
+          <a class="circle-action" href="tel:180030005149"><img src="assets/images/call.svg" alt="Call" /></a>
+          <a class="circle-action" href="mailto:care@bookmytask.in"><img src="assets/images/mail.svg" alt="Email" /></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="city-band">
+      <h2>Local train fast,<br />Apna Taskman <em>faster</em></h2>
+      <p>Mumbai, your Taskman has arrived.</p>
+      <img src="assets/images/city_skyline.png" class="city-skyline" alt="" />
+    </div>
+    <div class="footer-brand">
+      <img src="assets/images/logo.svg" alt="BookMyTask" />
+      <div class="tagline">Any<em>Task</em>,JustAsk!</div>
+      <div class="venture">A venture by <img src="assets/images/maanicare.svg" alt="Maanicare" /></div>
+    </div>
+  </main>
+
+  <div class="call-chat-bar">
+    <a class="bar-btn" href="tel:180030005149">
+      <img src="assets/images/call.svg" alt="" /><span>Call to book now</span>
+    </a>
+    <a class="bar-btn" href="https://wa.me/180030005149" target="_blank">
+      <img src="assets/images/whatsapp.svg" alt="" /><span>Chat with an expert</span>
+    </a>
+  </div>
+
+  <!-- ===================== Booking modal ===================== -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-box">
+      <img src="assets/images/close.svg" class="modal-close" id="booking-close" alt="Close" />
+
+      <!-- step 0: category -->
+      <div class="modal-step" data-step="0">
+        <span class="modal-step-chip">Step 1 of 3</span>
+        <div class="modal-card">
+          <h3 class="modal-title">What do you need help with?</h3>
+          <div class="tile-wrap" id="booking-category-tiles"></div>
+          <button class="primary-btn" id="booking-step0-next" style="margin-top:24px" disabled>Proceed</button>
+        </div>
+      </div>
+
+      <!-- step 1: schedule -->
+      <div class="modal-step" data-step="1">
+        <span class="modal-step-chip">Step 2 of 3</span>
+        <div class="modal-card">
+          <div class="modal-block">
+            <h3 class="modal-title">Preferred day</h3>
+            <div class="day-row" id="booking-day-tiles"></div>
+          </div>
+          <hr class="modal-divider" />
+          <div class="modal-block">
+            <h3 class="modal-title">Preferred time</h3>
+            <div class="tile-wrap time-grid" id="booking-time-tiles"></div>
+          </div>
+          <button class="primary-btn" id="booking-step1-next" disabled>Proceed</button>
+        </div>
+      </div>
+
+      <!-- step 2: contact -->
+      <div class="modal-step" data-step="2">
+        <span class="modal-step-chip">Step 3 of 3</span>
+        <div class="modal-card">
+          <div class="modal-block">
+            <h3 class="modal-title">Contact details</h3>
+            <div class="field-stack">
+              <div class="field">
+                <img src="assets/svg/person.svg" class="field-icon" alt="" />
+                <input type="text" id="booking-name" placeholder="Full name" maxlength="80" />
+              </div>
+              <div class="field">
+                <img src="assets/svg/call.svg" class="field-icon" alt="" />
+                <input type="tel" id="booking-phone" placeholder="Phone number" maxlength="10" inputmode="numeric" />
+              </div>
+              <div class="field">
+                <img src="assets/svg/location_on.svg" class="field-icon" alt="" />
+                <input type="text" id="booking-address" name="address" autocomplete="street-address" placeholder="Flat/house, street, area, city" maxlength="300" />
+              </div>
+            </div>
+            <p class="form-error" id="booking-error" role="alert" aria-live="polite" style="display:none"></p>
+          </div>
+          <button class="primary-btn" id="booking-submit">Request Booking</button>
+        </div>
+      </div>
+
+      <!-- step 3: received -->
+      <div class="modal-step" data-step="3">
+        <div class="modal-card received" id="booking-received"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== Special task modal ===================== -->
+  <div class="modal-overlay" id="special-modal">
+    <div class="modal-box">
+      <img src="assets/images/close.svg" class="modal-close" id="special-close" alt="Close" />
+
+      <div class="modal-step" data-step="0">
+        <span class="modal-step-chip">Step 2 of 3</span>
+        <div class="modal-card">
+          <div class="modal-block">
+            <div class="any-task-title">Any<em>Task,</em>JustAsk!</div>
+            <p class="special-task-intro">Tell us what you need done, our team of experts will find the perfect TaskMan for the job. Our team will contact you to verify everything before we lock in your booking.</p>
+            <div class="field">
+              <textarea id="special-task-desc" placeholder="Tell us about your special task" maxlength="1000"></textarea>
+            </div>
+            <p class="form-error" id="special-step0-error" role="alert" aria-live="polite" style="display:none"></p>
+          </div>
+          <button class="primary-btn" id="special-step0-next">Proceed</button>
+        </div>
+      </div>
+
+      <div class="modal-step" data-step="1">
+        <span class="modal-step-chip">Step 3 of 3</span>
+        <div class="modal-card">
+          <div class="modal-block">
+            <div class="any-task-title">Any<em>Task,</em>JustAsk!</div>
+            <p class="special-task-intro">Tell us what you need done, our team of experts will find the perfect TaskMan for the job. Our team will contact you to verify everything before we lock in your booking.</p>
+            <div class="field-stack">
+              <div class="field">
+                <img src="assets/svg/person.svg" class="field-icon" alt="" />
+                <input type="text" id="special-name" placeholder="Full name" maxlength="80" />
+              </div>
+              <div class="field">
+                <img src="assets/svg/call.svg" class="field-icon" alt="" />
+                <input type="tel" id="special-phone" placeholder="Phone number" maxlength="10" inputmode="numeric" />
+              </div>
+              <div class="field">
+                <img src="assets/svg/location_on.svg" class="field-icon" alt="" />
+                <input type="text" id="special-address" name="address" autocomplete="street-address" placeholder="Flat/house, street, area, city" maxlength="300" />
+              </div>
+            </div>
+            <p class="form-error" id="special-step1-error" role="alert" aria-live="polite" style="display:none"></p>
+          </div>
+          <button class="primary-btn" id="special-submit">Request Booking</button>
+        </div>
+      </div>
+
+      <div class="modal-step" data-step="2">
+        <div class="modal-card received" id="special-received"></div>
+      </div>
+    </div>
+  </div>
+
+  <dialog class="hub-preview-dialog" id="hub-preview-dialog" aria-labelledby="hub-preview-title">
+    <div class="hub-preview-content">
+      <button class="hub-preview-close" id="hub-preview-close" type="button" aria-label="Close video preview">&times;</button>
+      <h2 id="hub-preview-title"></h2>
+      <video id="hub-preview-video" controls playsinline></video>
+      <p class="hub-preview-error" id="hub-preview-error" role="status"></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
